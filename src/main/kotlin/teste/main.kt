@@ -1,10 +1,8 @@
 package teste
 
+import java.util.stream.Collector
+
 fun main() {
-
-
-
-
 
 
 
