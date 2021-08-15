@@ -10,12 +10,15 @@ internal class NullsafetyKtTest{
         val lista : List<String?> = listOf(
             "Testando", null, "Itens", null,null
         )
-        var listaNull : List<String?> = listOf()
+        var listaNull : MutableList<String?> = mutableListOf()
+
         for(item in lista){
-            if(item == null){
-               listaNull.toMutableList().add(item)
+            if(item.equals(null)){
+               listaNull.add(item)
             }
         }
-        Assert.assertEquals(null,  null)
+
+        Assert.assertTrue(listaNull.contains(null))
+//        Assert.assertEquals(null,  null) - ops!!
     }
 }

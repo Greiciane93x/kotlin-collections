@@ -14,4 +14,5 @@ fun main() {
             println("Essa lista tem valores nulos")
         }
     }
+
 }
