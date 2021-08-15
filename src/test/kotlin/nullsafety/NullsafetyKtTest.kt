@@ -34,4 +34,31 @@ internal class NullsafetyKtTest{
         var lista : List<String?> = listOf("Test2", "Testand", "Ane", "Aprendendo tests")
         Assert.assertTrue(!lista.contains(null))
     }
+
+    @Test
+    fun `deve filtrar somente nomes com ane`(){
+        var lista : List<String?> = listOf(
+            "Ane Assis",
+            "Ane Araujo",
+            "Ane Rocha",
+            "Alice Rocha",
+            "Alice",
+            "Bruno Rocha",
+            "Bruno"
+        )
+
+       Assert.assertTrue("Ane Assis", lista.contains("Ane Assis"))
+    }
+
+    @Test
+    fun `soma deve ser maior que 100`(){
+        var num1 : Int = 100
+        var num2 : Int = 900
+
+        Assert.assertEquals(1000, num1+num2)
+    }
+
+
 }
+
+
