@@ -21,4 +21,17 @@ internal class NullsafetyKtTest{
         Assert.assertTrue(listaNull.contains(null))
 //        Assert.assertEquals(null,  null) - ops!!
     }
+
+    @Test
+    fun `nao deve ter valores nulos2`(){
+        var lista : List<String?> = listOf("Test2", null, null, null)
+        Assert.assertTrue(lista.contains(null))
+    }
+
+
+    @Test
+    fun `deve ter apenas valores nao nulos`(){
+        var lista : List<String?> = listOf("Test2", "Testand", "Ane", "Aprendendo tests")
+        Assert.assertTrue(!lista.contains(null))
+    }
 }

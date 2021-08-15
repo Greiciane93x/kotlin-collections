@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="nullsafety.NullsafetyKtTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-15T00:40:49" hostname="ZUP-2351" time="0.042">
+<testsuite name="nullsafety.NullsafetyKtTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-08-15T00:46:53" hostname="ZUP-2351" time="0.044">
   <properties/>
-  <testcase name="nao deve ter valores nulos" classname="nullsafety.NullsafetyKtTest" time="0.042"/>
-  <system-out><![CDATA[[null, null, null]
-]]></system-out>
+  <testcase name="deve ter apenas valores nao nulos" classname="nullsafety.NullsafetyKtTest" time="0.044"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
